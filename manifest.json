@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "JWT Token Decode",
+  "version": "1.0.0",
+  "description": "Automatically detects JWT tokens in network requests and decodes them. Also supports manual decoding and signature verification.",
+  "author": "Delich Amir",
+  "devtools_page": "devtools.html",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "JWT Token Decode",
+    "default_icon": {
+      "16": "img/icon16.png",
+      "48": "img/icon48.png",
+      "64": "img/icon64.png",
+      "128": "img/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "64": "img/icon64.png",
+    "128": "img/icon128.png"
+  }
+}
