@@ -47,3 +47,12 @@ setInterval(() => {
   chrome.storage.local.set({ jwtNetworkRequests: networkRequests })
   .catch(err => console.info('Failed to save network requests:', err))
 }, 60000)
+
+// background.js (service worker)
+chrome.runtime.onInstalled.addListener((details) => {
+  if (details.reason === "install") {
+    chrome.tabs.create({
+      url: "https://jwttokendecode.soft-core.dev"
+    });
+  }
+});
