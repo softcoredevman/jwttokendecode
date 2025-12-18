@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "JWT 令牌解碼器"
+  },
+  "shortDesc": {
+    "message": "自動偵測並解碼 JWT 的安全工具，讓您快速檢視 JSON 令牌結構，簡單又高效。"
+  },
+  "storeDesc": {
+    "message": "JWT 令牌解碼器（JWT Token Decode） 是一款專為開發者、測試人員與資安工程師打造的 Chrome 擴充功能。\n 透過它，您可以直接在瀏覽器中查看與分析 JWT，不必切換工具，也不必擔心敏感資料外洩。所有資料解碼均在本地完成，安全又可靠。\n擴充功能會自動偵測網路請求中的 JWT，並以清晰的結構呈現 Header、Payload、Claims、Signature 與各項 Metadata。\n 也能搭配 jwt-decode、API 用戶端與常見工具自然整合，提供順暢的工作流程。\n\nThis extension is open-source. Source code:https://github.com/softcoredevman/jwttokendecode/\n\n📘 如何使用\n打開擴充功能面板\n\n貼上 JWT，或啟用自動偵測\n\n即時查看標頭、有效載荷與簽名結構\n\n一鍵複製已解碼內容\n\n讓 Chrome 成為您身邊最方便、最安全的 JWT 分析環境。\n\n🚀 為什麼 JWT 令牌解碼器如此出色\n完全本地運作 —— 不會向任何伺服器傳送資料\n\n自動從瀏覽器流量中抓取 JWT（包含 Bearer Token 流程）\n\n支援手動輸入模式，可直接執行 decode jwt token\n\n介面乾淨、直覺且高度專注效率\n\n專業的 JSON 檢視器，含語法高亮與智慧排版\n\n支援自訂 Claims、擴充欄位與多種 JWT 格式\n\n內建明亮 / 深色模式，長時間使用也舒適\n\n離線即可使用，亦可模擬 decode jwt token online 的體驗\n\n適合需要每日進行 decoding jwt token 的工程師與專案團隊使用\n\n自動偵測＋手動驗證雙模式，完美貼合真實世界的開發與資安流程。\n\n🔧 核心功能\n一鍵開啟的分析面板，內建 jwt token decoder\n\n自動語法上色與 JSON 格式化\n\n詳細解析 Header、Payload、Signature、Claims\n\n自動擷取 Authorization Token\n\n支援 Scopes、Roles 與進階 Metadata\n\n可將解碼內容部分或全部複製到剪貼簿\n\n與 jsonwebtoken、測試框架、API 工具高度相容\n\n某些流程中可作為輕量級 hash decoder\n\n可用於各類 jwt token decode online 需求\n\n支援 JWT 結構學習與 JS 工作流程整合\n\n\n🧩 您可以做到\n完整檢視 JWT 結構與相關欄位\n\n檢查與驗證 JSON Web Signature（json web signature decode）\n\n在 SPA、後端或微服務中分析認證流程\n\n使用自動偵測或手動貼上方式進行 decode jwt token online\n\n在開發、測試（QA）、安全審查中驗證 Claims 與格式\n\n透過清晰視覺化快速理解 how to decode jwt token\n\n\n🎯 適合哪些使用者？\n使用 Token-Based Auth 的前後端工程師\n\n驗證簽名、檢查 Session 完整性的資安工程師\n\n需要驗證 API 回應的 QA 測試人員\n\n想學習 jwt decode token 與架構的新手或學生\n\n任何需要快速、注重隱私、在 Chrome 中直接進行 JWT 分析的使用者\n\n\n🌙 為真實使用情境設計\n介面設計著重速度與清晰度。可折疊區塊、智慧排版與深淺色主題，讓您輕鬆處理複雜的 Claims 與巢狀資料。\n 無論您只是偶爾查看 Token，或每天檢查多組 API，JWT 令牌解碼器都能保持資訊清晰而高效。\n\n🔥 使用者喜愛它的原因\n開發、除錯、測試速度明顯加快\n\n不需要把 Token 貼到外部網站，更安全\n\n即時呈現清楚、結構化的資料\n\n比大多數線上工具更快、更穩定\n\n現代化 UI，不干擾工作流程\n\n是開發者理想的 jwt token decode 解決方案\n\n\n❓ 常見問題（FAQ）\nQ：擴充功能會把 Token 傳送到伺服器嗎？\n A：不會，所有處理都在您的瀏覽器本地完成。\nQ：可以手動貼上 Token 解碼嗎？\n A：可以。貼上任何 JWT，就能立即查看結果。\nQ：支援自動解碼嗎？\n A：是的。它會自動偵測瀏覽器請求中的 Token。\nQ：支援哪些格式？\n A：支援所有 JSON Web Token，包括自訂 Claims 與擴展欄位。\nQ：對敏感資料安全嗎？\n A：完全安全，因為所有運算都在本地進行。\n\n立即開始使用 JWT 令牌解碼器\n掌控您的認證流程，更快速、安全地分析 JWT。\n 在 Chrome 中即可完成所有 jwt token decode 工作，簡單又高效。\n\n"
+  }
+}

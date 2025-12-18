@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "JWT令牌解码器"
+  },
+  "shortDesc": {
+    "message": "自动检测并快速解码 JWT，安全查看 JSON 令牌结构，简单高效。"
+  },
+  "storeDesc": {
+    "message": "JWT令牌解码器（JWT Token Decode） 是一款为开发人员、测试工程师和安全团队打造的专业 Chrome 扩展。\n 您可以在浏览器中直接查看和分析 JWT，无需切换工具，也不用担心敏感信息被上传。所有解码均在本地完成，快速、安全且高效。\n扩展会自动识别网络请求中的 JWT，并以清晰的结构展示 Header、Payload、Claims、Signature 以及相关元数据。同时，它还能与 jwt-decode、API 客户端和常用调试工具无缝配合，帮助您打造顺畅、可靠的工作流程。\n\nThis extension is open-source. Source code:https://github.com/softcoredevman/jwttokendecode/\n\n📘 使用方法\n打开扩展面板\n\n粘贴 JWT 或使用自动检测功能\n\n即时查看结构化的 Header / Payload / Signature\n\n需要时可一键复制解码内容\n\n借助该工具，Chrome 将成为您处理认证相关数据的安全工作空间。\n\n🚀 为什么它如此出色\n全程本地处理 —— 无服务器请求，无数据泄露风险\n\n自动发现浏览器流量中的 JWT（包括 Bearer Token 场景）\n\n支持手动输入模式，快速完成 decode jwt token\n\nUI 简洁直观，专为提升生产力而设计\n\n专业 JSON 查看器，具备智能格式化与语法高亮\n\n支持扩展字段、自定义 Claims 等多种结构\n\n明亮 / 深色主题可自由切换\n\n离线即可使用，同时也可满足部分 decode jwt token online 工作需求\n\n适用于实际开发、调试与安全测试场景\n\n\n🔧 核心功能\n一键打开的分析面板，内置 jwt token decoder\n\n自动格式化 JSON 并高亮展示\n\n完整解析 Header、Payload、Claims 与 Signature\n\n自动捕获 Authorization 信息\n\n支持高级 Metadata、Scopes、Roles\n\n可将部分或全部结果快速复制\n\n与 jsonwebtoken、测试框架、API 工具高度兼容\n\n在部分流程中可作为轻量级 hash decoder\n\n能轻松融入团队的 decoding jwt token 工作流\n\n可直接在浏览器中实现与 jwt token decode online 类似的解码体验\n\n\n🧩 您可以做到\n清晰查看 JWT 的结构、字段和认证数据\n\n验证签名结构并执行 json web signature decode 检查\n\n调试 SPA、后端服务或微服务的认证流程\n\n使用手动模式或自动提取功能完成 decode jwt token online\n\n在开发、QA 或安全审计中验证 Claims 与格式是否正确\n\n通过直观结果快速理解 how to decode jwt token 的整个流程\n\n\n🎯 适用人群\n使用 Token-Based Auth 的前后端开发人员\n\n关注签名与会话安全性的安全工程师\n\n需要验证 API 输出内容的 QA 人员\n\n想学习 jwt decode token 的学生与初学者\n\n寻找快速、安全、本地解码工具的 Chrome 用户\n\n\n🌙 为真实使用场景而生\n界面以“快速、清晰、可靠”为原则设计。\n 折叠区块、智能格式化以及主题切换，让您在查看复杂 Claims 或嵌套结构时也能轻松导航。\n 无论是偶尔分析 Token，还是每日调试 API，这款工具都能保持高效、清晰且稳定。\n\n🔥 用户喜欢它的原因\n显著节省开发、调试与测试时间\n\n不需要把 Token 上传到第三方网站，更安全\n\n即时呈现结构化数据，清晰易读\n\n比多数在线工具更快、更稳定\n\n极简现代 UI，不干扰您的工作\n\n是工程师进行 jwt token decode 的理想方案\n\n\n❓ 常见问题（FAQ）\n扩展会把令牌发送到服务器吗？\n 不会，所有处理均在本地完成。\n可以手动粘贴 Token 解码吗？\n 可以，只需粘贴 JWT 即可立即查看解析结果。\n支持自动检测吗？\n 支持，会自动从网络请求中抓取 JWT。\n支持哪些格式？\n 支持所有 JSON Web Token，包括自定义 Claims 与扩展字段。\n对敏感数据安全吗？\n 完全安全，本地处理确保最高级别隐私保护。\n\n立即试用 JWT 令牌解码器\n快速、安全地分析 JWT，全面掌控您的认证工作流程。\n 所有 jwt token decode 工作都能在 Chrome 中轻松完成。\n\n"
+  }
+}
