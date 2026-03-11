@@ -11,13 +11,27 @@
     <div class="network-sidebar" id="network-sidebar">
       <div class="sidebar-header">
         <span>Network Requests</span>
-        <button class="refresh-btn" id="refresh-network" title="Refresh Requests">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M23 4v6h-6"></path>
-            <path d="M1 20v-6h6"></path>
-            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
-          </svg>
-        </button>
+
+        <div class="sidebar-header-actions">
+          <button class="network-btn" id="refresh-network" title="Refresh Requests">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 4v6h-6"></path>
+              <path d="M1 20v-6h6"></path>
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+            </svg>
+          </button>
+          <button class="network-btn" id="clear-network" title="Clear Requests">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path d="M19 6l-1 14H6L5 6"></path>
+              <path d="M10 11v6"></path>
+              <path d="M14 11v6"></path>
+              <path d="M9 6V4h6v2"></path>
+            </svg>
+          </button>
+        </div>
       </div>
       <div class="network-list" id="network-list">
         <div class="network-item">
@@ -107,22 +121,81 @@
         <div class="result-box">
           <pre id="payload"></pre>
         </div>
+
+        <div class="button-group">
+          <button class="btn btn-primary" id="copy-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 013.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0121 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 017.5 16.125V3.375z"/>
+              <path d="M15 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0017.25 7.5h-1.875A.375.375 0 0115 7.125V5.25zM4.875 6H6v10.125A3.375 3.375 0 009.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V7.875C3 6.839 3.84 6 4.875 6z"/>
+            </svg>
+            Copy All
+          </button>
+        </div>
+
       </div>
       <div class="footer-actions">
-        <button class="btn btn-secondary" id="copy-all">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 013.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0121 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 017.5 16.125V3.375z"/>
-            <path d="M15 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0017.25 7.5h-1.875A.375.375 0 0115 7.125V5.25zM4.875 6H6v10.125A3.375 3.375 0 009.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V7.875C3 6.839 3.84 6 4.875 6z"/>
-          </svg>
-          Copy All
-        </button>
+        <div class="full-stars">
+          <div class="rating-group">
+            <p style="text-align: center; font-family: arial, sans-serif; font-size: 16px">
+              Rate us: 
+            </p>
+            
+            <div class="feedback_space"></div>
+            <input name="fst" value="5" type="radio" disabled checked />
+            
+            <!-- 1 star -->
+            <a for="fst-1" href="https://docs.google.com/forms/d/e/1FAIpQLSfEzx8aosk6VL3v4wQRQmM4TOOyi6NKlCBob3xN2exlvWoNFQ/viewform" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/>
+              </svg>
+            </a>
+            <input name="fst" id="fst-1" value="1" type="radio" />
+
+            <!-- 2 star -->
+            <a for="fst-2" href="https://docs.google.com/forms/d/e/1FAIpQLSfEzx8aosk6VL3v4wQRQmM4TOOyi6NKlCBob3xN2exlvWoNFQ/viewform" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/>
+              </svg>
+            </a>
+            <input name="fst" id="fst-2" value="2" type="radio" />
+            
+            <!-- 3 star -->
+            <a for="fst-3" href="https://docs.google.com/forms/d/e/1FAIpQLSfEzx8aosk6VL3v4wQRQmM4TOOyi6NKlCBob3xN2exlvWoNFQ/viewform" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/>
+              </svg>
+            </a>
+            <input name="fst" id="fst-3" value="3" type="radio" />
+            
+            <!-- 4 star -->
+            <a for="fst-4" href="https://chromewebstore.google.com/detail/jwt-token-decode/fijcephcnbnajgkaeiamgcbeddmdfmnl/reviews" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/>
+              </svg>
+            </a>
+            <input name="fst" id="fst-4" value="4" type="radio" />
+            
+            <!-- 5 star -->
+            <a for="fst-5" href="https://chromewebstore.google.com/detail/jwt-token-decode/fijcephcnbnajgkaeiamgcbeddmdfmnl/reviews" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/>
+              </svg>
+            </a>
+            <input name="fst" id="fst-5" value="5" type="radio" />
+
+          </div>
+        </div>
+        <!-- feedback end-->
         <button class="btn btn-secondary" id="clear">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
             <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
-        </svg>
-          Clear
+          </svg>
+          Clear decoded
         </button>
       </div>
+
     </div>
   </div>
 </body>
