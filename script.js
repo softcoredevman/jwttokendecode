@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // buttons 
     const autoNetworkBtn = document.getElementById("auto-network-btn");
     const refreshNetworkBtn = document.getElementById("refresh-network");
+    const clearNetworkBtn = document.getElementById('clear-network');
     const decodeBtn = document.getElementById('decode');
     const decodeCopyBtn = document.getElementById('decode-copy');
     const copyHeaderBtn = document.getElementById('copy-header');
@@ -415,12 +416,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                 'jwtSecret', 
                 'jwtDecodedHeader', 
                 'jwtDecodedPayload',
-                'jwtNetworkSidebar',
+            ]
+        );
+    });
+
+    // Clear network requests
+    clearNetworkBtn.addEventListener('click', function() {
+        chrome.storage.local.remove(
+            [
                 'jwtNetworkRequests',
             ]
         );
     });
 
+    // Helpers
     async function checkJWTSignature(secret) {
         try {
             const token = tokenInput.value.trim();
