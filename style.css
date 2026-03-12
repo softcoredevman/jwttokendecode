@@ -110,7 +110,6 @@ body.light-mode {
     border: 1px solid var(--border);
 }
 
-
 .network-list {
     display: flex;
     flex-direction: column;
@@ -421,7 +420,6 @@ body.light-mode {
 .hidden {
     display: none;
 }
-
 
 .encode-select {
     display: flex;

@@ -63,7 +63,7 @@ function showStatus(message, isSuccess = true) {
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text)
         .then(() => {
-            showStatus('Copied to clipboard!');
+            console.info('Copied to clipboard!');
         })
         .catch(err => {
             console.info('Failed to copy: ', err);

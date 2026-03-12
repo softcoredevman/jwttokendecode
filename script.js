@@ -9,19 +9,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     // input
     const tokenInput = document.getElementById('token');
     const secretInput = document.getElementById('secret');
-    // const secretInput = document.querySelector('.secret-input');
 
     // buttons 
-    const autoNetworkBtn = document.getElementById("auto-network-btn");
-    const refreshNetworkBtn = document.getElementById("refresh-network");
-    const clearNetworkBtn = document.getElementById('clear-network');
-    const decodeBtn = document.getElementById('decode');
-    const decodeCopyBtn = document.getElementById('decode-copy');
-    const copyHeaderBtn = document.getElementById('copy-header');
-    const copyPayloadBtn = document.getElementById('payload'); 
-    const copyAllBtn = document.getElementById('copy-all');
-    const clearBtn = document.getElementById('clear');
-    const verifyBtn = document.getElementById('verify');
+    const autoNetworkBtn = document.getElementById("autoNetworkBtn");
+    const refreshNetworkBtn = document.getElementById("refreshNetworkBtn");
+    const clearNetworkBtn = document.getElementById('clearNetworkBtn');
+    const decodeBtn = document.getElementById('decodeBtn');
+    const decodeCopyBtn = document.getElementById('decodeCopyBtn');
+    const copyHeaderBtn = document.getElementById('copyHeaderBtn');
+    const copyPayloadBtn = document.getElementById('copyPayloadBtn');
+    const copyAllBtn = document.getElementById('copyAllBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const verifyBtn = document.getElementById('verifyBtn');
 
     // other
     const networkSidebar = document.getElementById("network-sidebar");
@@ -353,7 +352,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             copyToClipboard(JSON.stringify(result, null, 2));
             saveAllData();
-            showStatus('Decoded and copied to clipboard!');
+            showStatus('Token decoded & Copied data to clipboard.');
         } catch (error) {
             showStatus(error.message, false);
         }
@@ -375,6 +374,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         };
         
         copyToClipboard(JSON.stringify(result, null, 2));
+        showStatus('Copied decoded data to clipboard.');
     });
 
     // Copy header only
@@ -387,6 +387,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         copyToClipboard(headerText);
+        showStatus('Copied header data to clipboard.');
     });
 
     // Copy payload only
@@ -399,6 +400,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         copyToClipboard(payloadText);
+        showStatus('Copied payload data to clipboard.');
     });
 
     // Clear all inputs and results

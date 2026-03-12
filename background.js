@@ -50,6 +50,10 @@ setInterval(() => {
 
 // background.js (service worker)
 chrome.runtime.onInstalled.addListener((details) => {
+  chrome.runtime.setUninstallURL(
+    "https://docs.google.com/forms/d/e/1FAIpQLSfEzx8aosk6VL3v4wQRQmM4TOOyi6NKlCBob3xN2exlvWoNFQ/viewform"
+  );
+
   if (details.reason === "install") {
     chrome.tabs.create({
       url: "https://jwttokendecode.soft-core.dev/extension"
